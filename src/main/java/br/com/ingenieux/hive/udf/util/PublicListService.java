@@ -126,7 +126,7 @@ public class PublicListService {
 
 					while (listIterator.hasNext()) {
 						String nextRule = listIterator.next();
-						if (nextRule.equals("*")) {
+						if ("*".equals(nextRule)) {
 							int ruleLen = key.split("\\.").length;
 
 							int upperIndex = Math.min(1 + i, elts.size());
